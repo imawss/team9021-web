@@ -1,67 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root{
-    --primary-txt-color: #363D40;
-    --secondary-txt-color: #2C3437; 
-    --team-color: #4E525D;
+:root {
+  --primary-txt-color: #363d40;
+  --secondary-txt-color: #2c3437;
+  --team-color: #4e525d;
 }
 
-.navbar{
-    display: flex;
-    margin-top: 1%;
-    margin-bottom: 1%;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-nav::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: #e7eaec;
+.navbar {
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
-.navbar img{
-    width: 4%;
-    height: 4%;
-    border-radius: 50%;
-    margin-left: 5%;
+nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #e7eaec;
 }
 
-.navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50%;
-    text-align: center;
+.navbar img {
+  width: 4%;
+  height: 4%;
+  border-radius: 50%;
+  margin-left: 5%;
 }
 
-
-.navbar li{
-    margin-right: 10%;
-    padding: 0px 20px;
-    list-style: none;
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+  text-align: center;
 }
 
-.navbar li a{
-    text-decoration: none;
-    color: var(--team-color);
-    text-align: center;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: larger;
-    font-weight: 600;
-    transition: 0.1s;
+.navbar li {
+  margin-right: 10%;
+  padding: 0px 20px;
+  list-style: none;
 }
 
-.navbar li a:hover{
-    color: #4E525D;
-    font-weight: 800;
+.navbar li a {
+  text-decoration: none;
+  color: var(--team-color);
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  font-weight: 600;
+  transition: 0.1s;
 }
 
-.container{
-    display: flex;
+.navbar li a:hover {
+  color: #4e525d;
+  font-weight: 800;
 }
 
-.column{
-    width: 50%;
+.container {
+  display: flex;
+  height: calc(100% - 60px); /* Header yüksekliği çıkarıldı */
+}
+
+.column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-column {
+  padding: 20px; /* Sol ve sağ boşluk eklemek için padding eklendi */
+}
+
+#left-column h2 {
+  color: var(--primary-txt-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 300%;
+  font-weight: 700;
+  text-align: center;
+}
+
+#left-column p {
+  color: var(--secondary-txt-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.column-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.forwarding-button {
+  padding: 10px 20px;
+  background-color: var(--team-color);
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.forwarding-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.forwarding-button:hover {
+  background-color: #3b3e47;
 }
