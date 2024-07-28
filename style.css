@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --primary-txt-color: #363d40;
@@ -6,7 +7,8 @@
   --team-color: #4e525d;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -66,7 +68,7 @@ nav::after {
 
 .container {
   display: flex;
-  height: calc(100% - 60px); 
+  height: calc(100% - 60px);
 }
 
 .column {
@@ -77,26 +79,28 @@ nav::after {
 }
 
 #left-column {
-  padding: 20px; 
+  padding: 20px;
 }
 
 #left-column h2 {
   color: var(--primary-txt-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-size: 300%;
-  font-weight: 700;
+  font-style: normal;
   text-align: center;
   margin-bottom: 1%;
 }
 
 #left-column p {
   color: var(--secondary-txt-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 200%;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   margin-top: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .column-content {
@@ -108,14 +112,16 @@ nav::after {
 }
 
 .forwarding-button {
-  padding: 10px 20px;
-  background-color: var(--team-color);
+  padding: 10px 30px;
+  background-color: var(--secondary-txt-color);
   border: none;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 125%;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 24px;
+  transition: 0.3s;
 }
 
 .forwarding-button a {
@@ -124,5 +130,7 @@ nav::after {
 }
 
 .forwarding-button:hover {
-  background-color: #3b3e47;
+  background-color: var(--team-color);
+  border-radius: 6px;
+  padding: 15px 35px;
 }
