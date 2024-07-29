@@ -283,6 +283,10 @@ html {
     padding: 0px;
   }
 
+  #left-column p{
+    padding: 0px 20px;
+  }
+
   .forwarding-button {
     font-size: 100%;
   }
