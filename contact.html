@@ -10,33 +10,64 @@
         body {
             font-family: Arial, sans-serif;
         }
-        .contact-form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 1em;
-            border: 1px solid #ccc;
-            border-radius: 1em;
+
+        .container {
+            display: flex;
+            flex-direction: column;
         }
-        .contact-form div + div {
-            margin-top: 1em;
-        }
-        .contact-form label {
+
+        .container h1 {
+            color: var(--primary-txt-color);
+            font-family: "Darker Grotesque", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-size: 300%;
+            font-style: normal;
+            margin-top: 20px;
+            text-transform: uppercase;
             display: block;
-            font-weight: bold;
         }
-        .contact-form input, .contact-form textarea {
+
+        .card-list {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-list li {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .card {
+            background-color: #F3F5F6;
+            padding: 30px 100px;
+            margin-right: 5%;
+            text-align: center;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px; 
+        }
+
+        .card h3{
+            
+        }
+
+        .forwarding-button {
+            font-size: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .forwarding-button a {
+            display: inline-block;
             width: 100%;
-            padding: 0.5em;
-            border: 1px solid #ccc;
-            border-radius: 0.5em;
-        }
-        .contact-form button {
-            padding: 0.7em;
-            border: none;
-            border-radius: 0.5em;
-            background: #007BFF;
-            color: white;
-            font-size: 1em;
+            padding: 10px 0;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -45,7 +76,7 @@
     <div id="overlay" class="overlay">
         <img id="loading-image" src="assets/img/logo.jpg" alt="Loading" class="loading-image">
     </div>
-    
+
     <header>
         <nav>
             <div class="navbar">
@@ -63,14 +94,32 @@
     </header>
 
     <div class="container">
-        <div class="column" id="left-column">
-           <form action=""></form>
-        </div>
-        <div class="column" id="right-column">
-            <div class="column-content">
-              
-            </div>
-        </div>
+        <h1>get in touch with our team</h1>
+        <ul class="card-list">
+            <li>
+                <div class="card">
+                    <h3>Kazım Efe Adagide</h3>
+                    <p>Team Captain</p>
+                    <p>+90 530 823 73 05</p>
+                    <button class="forwarding-button"><a href="about.html">Send Email</a></button>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <h3>Email</h3>
+                    <p>Send us an email and we'll get back to you soon.</p>
+                    <button class="forwarding-button"><a href="about.html">Send Email</a></button>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <h3>Dila Çağatay</h3>
+                    <p>PR Subteam Captain</p>
+                    <p>+90 530 823 73 05</p>
+                    <button class="forwarding-button"><a href="about.html">Send Email</a></button>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
