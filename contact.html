@@ -11,8 +11,16 @@
       type="image/x-icon"
     />
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         font-family: Arial, sans-serif;
+      }
+
+      header{
+        display: block;
       }
 
       .container {
@@ -98,20 +106,19 @@
       }
 
       @media screen and (max-width: 820px) {
-        body {
+        
+        html,body {
           overflow: scroll;
+          height: 100%;
         }
 
-        header{
-            padding-bottom: 100%;
+        header, nav{
+            height: 60px;
         }
 
-        .container {
-          display: flex;
-          height: calc(100% - 60px);
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
+        .container{
+            padding: 0px 0px;
+            margin-top: 0px;
         }
 
         .container h1 {
@@ -124,8 +131,7 @@
         }
 
         .card {
-          height: 300px;
-          margin-bottom: 5%;
+          height: 200px;
         }
 
         .card h3 {
